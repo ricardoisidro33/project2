@@ -76,7 +76,6 @@ Player model
   weight: Number,
   age: Number,
   position: String,
-  favorites: [FavoriteId], (BONUS)
 }
 
 ```
