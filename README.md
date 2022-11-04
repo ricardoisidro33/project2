@@ -59,8 +59,20 @@ User model
   name: String,
   email: String,
   password: String,
+  
   favoriteTeams: [{FavoriteTeamsId -model Teams}], (BONUS)
   favoritePlayers: [{FavoritePlayersId -model Players}], (BONUS)
+}
+
+```
+
+Review model
+
+```javascript
+{
+  content: String,
+  user: type: Shema.Type.ObjectId, ref: "User"
+  player: type: Shema.Type.ObjectId, ref: "Player"
 }
 
 ```
