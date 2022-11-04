@@ -134,7 +134,7 @@ Favorites model (BONUS)
 
 The url to your repository and to your deployed project
 
-[Repository Link]()
+[(https://github.com/ricardoisidro33/project2)]()
 
 [Deploy Link]()
 
