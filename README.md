@@ -68,7 +68,8 @@ Player model
 
 ```javascript
 {
-  img: 
+  img: url,
+  video: url,
   name: String,
   height: Number,
   weight: Number,
