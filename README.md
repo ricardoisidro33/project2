@@ -87,6 +87,9 @@ Team model
   conference: String,
   division: String,
   foundationyear: Number,
+  city: String,
+  arena: String,
+  nbatitles: Number,
 }
 
 ```
