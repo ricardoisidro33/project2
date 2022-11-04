@@ -59,7 +59,8 @@ User model
   name: String,
   email: String,
   password: String,
-  favorites: [FavoriteId], (BONUS)
+  favoriteTeams: [{FavoriteTeamsId -model Teams}], (BONUS)
+  favoritePlayers: [{FavoritePlayersId -model Players}], (BONUS)
 }
 
 ```
