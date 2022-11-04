@@ -151,6 +151,6 @@ The url to your presentation slides
 [Slides Link](https://docs.google.com/presentation/d/1P5FIi0vHZBUcgUtmt1M4_lLCO5dwdJ4UOgtJa4ehGfk/edit?usp=sharing)
 
 ### Contributors
-Ricardo Isidro - [`<ricardoisidro33>`](https://github.com/ricardoisidro33)) - [`<linkedin-profile-link>`](https://www.linkedin.com/in/ricardoisidro/)
+Ricardo Isidro - [`<ricardoisidro33>`](https://github.com/ricardoisidro33) - [`<linkedin-profile-link>`](https://www.linkedin.com/in/ricardoisidro/)
 <br>
 Gonçalo Arsénio - [`<goncaloarsenio>`](https://github.com/goncaloarsenio) - [`<linkedin-profile-link>`](https://www.linkedin.com/in/goncalo-arsenio-/)
