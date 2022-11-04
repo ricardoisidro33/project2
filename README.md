@@ -152,4 +152,5 @@ The url to your presentation slides
 
 ### Contributors
 Ricardo Isidro - [`<ricardoisidro33>`](https://github.com/ricardoisidro33)) - [`<linkedin-profile-link>`](https://www.linkedin.com/in/ricardoisidro/)
+<br>
 Gonçalo Arsénio - [`<goncaloarsenio>`](https://github.com/goncaloarsenio) - [`<linkedin-profile-link>`](https://www.linkedin.com/in/goncalo-arsenio-/)
