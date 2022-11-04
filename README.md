@@ -112,13 +112,6 @@ Favorites model (BONUS)
 
 
 
-## Packages
-
-
-
-<br>
-
-
 
 ## Backlog
 
