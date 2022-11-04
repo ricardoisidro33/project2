@@ -40,7 +40,7 @@ Search platform for NBA players informations and videos of best plays, create th
 | `POST`     | `/login`                           | Sends Login form data to the server.                         | { email, password }                                      |
 | `GET`      | `/signup`                          | Renders `signup` form view.                                  |                                                          |
 | `POST`     | `/signup`                          | Sends Sign Up info to the server and creates user in the DB. | { username, email, password  }                           |
-| `GET`      | `/team/:id                         | Display team info and team players                           |                                                          |
+| `GET`      | `/team/:id`                        | Display team info and team players                           |                                                          |
 | `GET`      | `/player/:id`                      | Display players info and videos                              |                                                          |
 | `POST`     | `/players/:id/comment`             | Add comments/Reviews on the players                          |                                                          |
 
