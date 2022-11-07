@@ -25,18 +25,18 @@ router.get("/team/:id", (req,res,next) =>{
   
 })
 
-/* 
-router.get('/teams', async (req,res,next) =>{
+
+router.get('/team', async (req,res,next) =>{
   try{
       let teams = await Team.find();
-      console.log(teams.name)
+      /* console.log(teams.name) */
       res.render("index", {teams})
   } catch(error){
       console.log(error)
       next(error);
   }
 
-}) */
+})
 
 
 
