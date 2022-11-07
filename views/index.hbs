@@ -1,10 +1,12 @@
 <h1>NBA TEAMS</h1>
-
+<div class="allteamsdiv">
 {{#each teams}}
+<div class="eachteamdiv">
 <h3>{{name}}</h3>
-<p>Conference: {{conference}}</p>
-<p>Division: {{divison}}</p>
-<p>Foundation Year: {{foundationyear}}</p>
-<p>Number of Titles: {{titles}}</p>
-<p>Arena: {{arena}}</p>
+<img src="{{imgUrl}}" alt="fgdg" class="teamimg">
+<hr/>
+<br>
+<a href='/team/{{_id}}' class="teamdetails">View Team Details</a>
+</div>
 {{/each}}
+</div>
