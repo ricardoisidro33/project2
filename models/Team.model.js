@@ -8,7 +8,8 @@ const teamSchema = new Schema(
             division: String,
             foundationyear: Number,
             titles: Number,
-            arena: String
+            arena: String,
+            imgUrl: String
         },
 
 

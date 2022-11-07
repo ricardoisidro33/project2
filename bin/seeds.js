@@ -8,64 +8,71 @@ const teams = [
     {
       name: "Houston Rockets",
       conference: "Western Conference",
-      divison: "Southwest Division",
+      division: "Southwest Division",
       foundationyear: 1967,
       titles: 2,
-      arena: "Toyota Center"
+      arena: "Toyota Center",
+      imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
     },
 
     {
         name: "Boston Celtics",
         conference: "Eastern Conference",
-        divison: "Atlantic Division",
+        division: "Atlantic Division",
         foundationyear: 1946,
         titles: 17,
-        arena: "TD Garden"
+        arena: "TD Garden",
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
       },
     
       {
         name: "Philadelphia 76ers",
         conference: "Eastern Conference",
-        divison: "Atlantic Division",
+        division: "Atlantic Division",
         foundationyear: 1946,
         titles: 3,
-        arena: "Wells Fargo Center"
+        arena: "Wells Fargo Center",
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
       },
 
       {
         name: "Los Angeles Lakers",
         conference: "Western Conference",
-        divison: "Pacific Division",
+        division: "Pacific Division",
         foundationyear: 1947,
         titles: 17,
-        arena: "Staples Center / Crypto.com Arena"
+        arena: "Staples Center / Crypto.com Arena",
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
       },
 
       {
         name: "Golden State Warriors",
         conference: "Western Conference",
-        divison: "Pacific Division",
+        division: "Pacific Division",
         foundationyear: 1946,
         titles: 7,
-        arena: "Chase Center"
+        arena: "Chase Center",
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
       },
 
       {
         name: "Miami Heat",
         conference: "Eastern Conference",
-        divison: "Southeast Division",
+        division: "Southeast Division",
         foundationyear: 1988,
         titles: 3,
-        arena: "AmericanAirlines Arena"
+        arena: "AmericanAirlines Arena",
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
       },
       
       {
         name: "Chicago Bulls",
         conference: "Eastern Conference",
-        divison: "Central Division",
+        division: "Central Division",
         foundationyear: 1966,
         titles: 6,
-        arena: "United Center"
+        arena: "United Center",
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
       },
 ]
 
@@ -251,7 +258,7 @@ async function seeds(){
     try{
 
     
-    const x = await mongoose.connect(process.env.MONGO_URI)
+    const x = await mongoose.connect("mongodb+srv://Ricardo:12345@project.nlqoh6b.mongodb.net/?retryWrites=true&w=majority")
     console.log(`Connected to: ${x.connections[0].name}`);
 
         //Adding books to DB
