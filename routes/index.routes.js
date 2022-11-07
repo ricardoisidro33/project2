@@ -24,7 +24,22 @@ router.get("/team/:id", async (req,res,next) =>{
   try {
    const {id} = req.params
    let teams = await Team.findById(id)
-        res.render('team', {teams})
+   
+   let players = await Player.find({'team':`${teams.name}` })
+   res.render('team', {teams, players})
+
+  } catch (error) {
+    console.log(error)
+    next(error);
+  }
+
+})
+
+/* router.get("/player/:id", async (req,res,next) =>{
+  try {
+   const {id} = req.params
+   let players = await Player.findById(id)
+        res.render('player', {players})
   } catch (error) {
     console.log(error)
     next(error);
