@@ -22,7 +22,7 @@ const teams = [
         foundationyear: 1946,
         titles: 17,
         arena: "TD Garden",
-        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Boston_Celtics.svg/800px-Boston_Celtics.svg.png"
       },
     
       {
@@ -32,7 +32,7 @@ const teams = [
         foundationyear: 1946,
         titles: 3,
         arena: "Wells Fargo Center",
-        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
+        imgUrl: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Philadelphia-76ers-Logo-1977-1996.png"
       },
 
       {
@@ -42,7 +42,7 @@ const teams = [
         foundationyear: 1947,
         titles: 17,
         arena: "Staples Center / Crypto.com Arena",
-        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
+        imgUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg"
       },
 
       {
@@ -52,7 +52,7 @@ const teams = [
         foundationyear: 1946,
         titles: 7,
         arena: "Chase Center",
-        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
+        imgUrl: "https://upload.wikimedia.org/wikipedia/pt/d/da/Golden_State_Warriors.png"
       },
 
       {
@@ -62,7 +62,7 @@ const teams = [
         foundationyear: 1988,
         titles: 3,
         arena: "AmericanAirlines Arena",
-        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/800px-Miami_Heat_logo.svg.png"
       },
       
       {
@@ -72,7 +72,7 @@ const teams = [
         foundationyear: 1966,
         titles: 6,
         arena: "United Center",
-        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/800px-Houston_Rockets.svg.png"
+        imgUrl: "https://seeklogo.com/images/C/chicago-bulls-logo-8530A1093D-seeklogo.com.png"
       },
 ]
 
