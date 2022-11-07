@@ -244,3 +244,27 @@ const players = [
         team: "Chicago Bulls"
     },
 ]
+
+
+
+async function seeds(){
+    try{
+
+    
+    const x = await mongoose.connect(process.env.MONGO_URI)
+    console.log(`Connected to: ${x.connections[0].name}`);
+
+        //Adding books to DB
+   let createdTeams = await Team.create(teams);
+   const createdPlayers= await Player.create(players);
+console.log(`Successfuly created ${createdTeams.length}`);
+console.log(`Successfuly created ${createdPlayers.length}`);
+
+    x.disconnect()
+}
+catch(error){
+    console.log(error)
+}
+  }
+
+  seeds(); 

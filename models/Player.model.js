@@ -7,6 +7,7 @@ const playerSchema = new Schema(
         weight: Number,
         number: Number,
         position: String,
+        team: String
     },
     {
       // this second object adds extra properties: `createdAt` and `updatedAt`
@@ -14,6 +15,6 @@ const playerSchema = new Schema(
     }
   );
   //Storing in Variable
-const Player= model("Player", playerSchema)
+const Player = model("Player", playerSchema)
 //Export in variable
 module.exports= Player;
