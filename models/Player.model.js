@@ -7,7 +7,9 @@ const playerSchema = new Schema(
         weight: Number,
         number: Number,
         position: String,
-        team: String
+        team: String,
+        icon: String,
+        playerimg: String
     },
     {
       // this second object adds extra properties: `createdAt` and `updatedAt`
