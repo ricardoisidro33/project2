@@ -8,9 +8,7 @@ a {
   color: #00b7ff;
 }
 
-h1{
-  margin: 50px;
-}
+
 
 .eachteamdiv{
   border: 3px solid black;
@@ -39,4 +37,38 @@ h1{
 .teamimg{
   width: 100px;
   height: 100px;
+}
+
+.eachplayerimg1{
+  width: 260px;
+  height: 200px;
+}
+
+.container{
+  border: 3px solid black;
+  margin: 50px;
+  width: 500px;
+}
+
+.eachplayerdiv{
+  border: 3px solid black;
+  margin: 50px;
+  width: 300px;
+  text-align: center;
+}
+
+
+
+.eachplayerdiv h2{
+  padding-top: 15px;
+}
+
+.allplayersdiv{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: space-evenly;
+  margin: 50px;
 }
