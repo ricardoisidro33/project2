@@ -1,11 +1,16 @@
+
+<div class="mainpage">
 <h1>NBA TEAMS</h1>
 <div class="allteamsdiv">
 {{#each teams}}
 <div class="eachteamdiv">
+<a href='/team/{{_id}}' class="teamdetails {{_id}}">
 <h3>{{name}}</h3>
+</a>
 <img src="{{imgUrl}}" alt="fgdg" class="teamimg">
 <br>
-<a href='/team/{{_id}}' class="teamdetails {{_id}}">View Team Details</a>
+{{!-- <a href='/team/{{_id}}' class="teamdetails {{_id}}">View Team Details</a> --}}
 </div>
 {{/each}}
+</div>
 </div>

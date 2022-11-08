@@ -8,29 +8,46 @@ a {
   color: #00b7ff;
 }
 
+.mainpage{
+text-align: center;
+}
 
 .eachteamdiv{
-  border: 3px solid black;
+ /*  border: 3px solid black; */
   margin-bottom: 35px;
   border-radius: 5px;
   padding-left: 10px;
+  padding-top:35px;
   width: 190px;
   height: 230px;
-  text-align: center;
+  /* text-align: center; */
+  align-items: center;
+  border-radius: 10%;
+  background-color: blanchedalmond;
+
+
 }
 
 .teamdetails{
   text-decoration: none;
+  color:black
 }
 
 .allteamsdiv{
-	display: flex;
+/* 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: stretch;
+	align-items:stretch;
 	align-content: space-evenly;
-  margin: 50px;
+  margin: 50px; */
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 20px;
+
 }
 
 .teamimg{
@@ -45,18 +62,33 @@ a {
 
 .container{
   border: 3px solid black;
-  margin: 50px;
-  width: 500px;
+/*   margin: 50px; */
+  width: 330px;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 10%;
+  align-items:stretch;
+  padding:20px;
+
+ 
 }
 
 .eachplayerdiv{
-  border: 3px solid black;
-  margin: 50px;
+  /* border: 3px solid black; */
   width: 300px;
   text-align: center;
+  margin-bottom: 40px;
+  border-radius: 10%;
+  background-color:rgba(183, 184, 190, 0.787);
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-
+.players-name{
+  text-decoration: none;
+  color:rgb(21, 102, 40)
+}
 
 .eachplayerdiv h2{
   padding-top: 15px;
@@ -72,6 +104,8 @@ a {
   margin: 50px;
 }
 
-.player-info{
-  
+.container2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
