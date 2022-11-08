@@ -76,7 +76,7 @@ router.get("/login", isLoggedOut, (req, res) => {
 
 // POST /auth/login
 router.post("/login", isLoggedOut, (req, res, next) => {
-  const { username, email, password } = req.body;
+  const { email, password } = req.body;
 
   // Check that username, email, and password are provided
   if (!email || !password) {
@@ -131,15 +131,25 @@ router.post("/login", isLoggedOut, (req, res, next) => {
 });
 
 // GET /auth/logout
-router.get("/logout", isLoggedIn, (req, res) => {
+/* router.get("/logout", isLoggedIn, (req, res) => {
   req.session.destroy((err) => {
     if (err) {
       res.status(500).render("auth/logout", { errorMessage: err.message });
       return;
     }
-
+    
     res.redirect("/");
   });
+}); */
+
+router.post("/logout",(req, res, next) => {
+if(!req.session) res.redirect('/auth/login');
+
+req.session.destroy((err) => {
+  if(err) next(err);
+  else res.redirect('/auth/login');
 });
+});
+
 
 module.exports = router;

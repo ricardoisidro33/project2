@@ -4,6 +4,67 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.h2{
+  text-align: center;
+  margin: 0 auto;
+  margin-top:50px;
+  color: white;
+  padding-top: 10px;
+  color:#e90a2f
+}
+
+span{
+  color:#01408d;
+}
+
+#login-form{
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  background-color: rgb(227, 223, 223, 0.5);
+  border-radius: 5%
+}
+
+.login-btn{
+  width:100px;
+  background-color: #01408d;
+  color: #e90a2f;
+  height: 30px;;
+}
+
+.credentials{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.email{
+  color: #01408d
+}
+
+.password{
+  color:#e90a2f
+}
+
+
+
+.input{
+  display: flex;
+  flex-direction: column;
+  width:90px;
+  margin: 0 auto;
+  align-items: center;
+  padding-bottom: 20px;
+
+}
+
+.nba-logo{
+  width:100px;
+  height: 60px;
+}
+
 a {
   color: #00b7ff;
 }
@@ -80,7 +141,7 @@ text-align: center;
   text-align: center;
   margin-bottom: 40px;
   border-radius: 10%;
-  background-color:rgba(183, 184, 190, 0.787);
+  background-color:rgba(232, 196, 175, 0.787);
   padding-top: 15px;
   padding-bottom: 15px;
 }
