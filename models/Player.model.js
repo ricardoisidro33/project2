@@ -9,7 +9,8 @@ const playerSchema = new Schema(
         position: String,
         team: String,
         icon: String,
-        playerimg: String
+        playerimg: String,
+        playerVideo: String
     },
     {
       // this second object adds extra properties: `createdAt` and `updatedAt`

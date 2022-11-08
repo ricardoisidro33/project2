@@ -35,17 +35,17 @@ router.get("/team/:id", async (req,res,next) =>{
 
 })
 
-/* router.get("/player/:id", async (req,res,next) =>{
+router.get("/player/:id", async (req,res,next) =>{
   try {
    const {id} = req.params
-   let players = await Player.findById(id)
-        res.render('player', {players})
+   let player = await Player.findById(id)
+        res.render('player', player)
   } catch (error) {
     console.log(error)
     next(error);
   }
 
-}) */
+})
 
 
 
