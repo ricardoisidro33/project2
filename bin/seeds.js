@@ -88,7 +88,8 @@ const players = [
         position: "Point Guard / Shooting Guard",
         team: "Houston Rockets",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3992.png",
-        playerimg: "https://thespun.com/.image/t_share/MTgzMTI4NTIwODI1Nzc1NDU2/brooklyn-nets-v-houston-rockets.jpg"
+        playerimg: "https://thespun.com/.image/t_share/MTgzMTI4NTIwODI1Nzc1NDU2/brooklyn-nets-v-houston-rockets.jpg",
+        playerVideo: "https://www.youtube.com/embed/X9GddRiKdXg"
     },
     {
         name: "Hakeem Olajuwon",
@@ -98,7 +99,8 @@ const players = [
         position: "Center",
         team: "Houston Rockets",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/165.png",
-        playerimg: "https://i.pinimg.com/736x/b7/54/fd/b754fd9f4769089fae5c393d27cb9082.jpg"
+        playerimg: "https://i.pinimg.com/736x/b7/54/fd/b754fd9f4769089fae5c393d27cb9082.jpg",
+        playerVideo: "https://www.youtube.com/embed/_m8OeZWbcOE"
         
     },
     {
@@ -109,7 +111,8 @@ const players = [
         position: "Small Forward",
         team: "Houston Rockets",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/1503.png",
-        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg5ODA2MDc2OTM2MzMyOTg4/gettyimages-51947720-1-e1587784829131.jpg"
+        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg5ODA2MDc2OTM2MzMyOTg4/gettyimages-51947720-1-e1587784829131.jpg",
+        playerVideo: "https://www.youtube.com/embed/NollBuDyU6Q"
     },
     {
         name: "Kobe Bryant",
@@ -119,7 +122,8 @@ const players = [
         position: "Shooting Guard",
         team: "Los Angeles Lakers",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/977.png",
-        playerimg: "https://i.pinimg.com/736x/5f/2c/62/5f2c6230d938b73b840a5c7cc4e5d807--custom-basketball-nike-basketball.jpg"
+        playerimg: "https://i.pinimg.com/736x/5f/2c/62/5f2c6230d938b73b840a5c7cc4e5d807--custom-basketball-nike-basketball.jpg",
+        playerVideo: "https://www.youtube.com/embed/jhyANGHDDH8"
     },
     {
         name: "Shaquille O'Neal",
@@ -129,7 +133,8 @@ const players = [
         position: "Center",
         team: "Los Angeles Lakers",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/406.png",
-        playerimg: "http://cdn.shopify.com/s/files/1/0589/1069/products/LakersShaquilleO_Neal-3974892.jpg?v=1597522784"
+        playerimg: "http://cdn.shopify.com/s/files/1/0589/1069/products/LakersShaquilleO_Neal-3974892.jpg?v=1597522784",
+        playerVideo: "https://www.youtube.com/embed/oXOZMg6VWMA"
     },
     {
         name: "Magic Johnson",
@@ -139,7 +144,8 @@ const players = [
         position: "Point Guard",
         team: "Los Angeles Lakers",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/77142.png",
-        playerimg: "https://cdn.britannica.com/27/189527-050-5BAD12C2/Magic-Johnson.jpg"
+        playerimg: "https://cdn.britannica.com/27/189527-050-5BAD12C2/Magic-Johnson.jpg",
+        playerVideo: "https://www.youtube.com/embed/1rHsp8ftQbI"
     },
     {
         name: "Jayson Tatum",
@@ -149,7 +155,8 @@ const players = [
         position: "Power Forward",
         team: "Boston Celtics",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4065648.png&w=350&h=254",
-        playerimg: "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/zM-UIuIgibxZwV7BsSLOvKjJInc=/960x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/KLS5NKDF56RGFF3CY7BLRLGYEE.jpg"
+        playerimg: "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/zM-UIuIgibxZwV7BsSLOvKjJInc=/960x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/KLS5NKDF56RGFF3CY7BLRLGYEE.jpg",
+        playerVideo: "https://www.youtube.com/embed/vF-Q85EuAtI"
     },
     {
         name: "Larry Bird",
@@ -159,7 +166,8 @@ const players = [
         position: "Shooting Guard",
         team: "Boston Celtics",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/1449.png",
-        playerimg: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Larry_Bird_layup.jpg"
+        playerimg: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Larry_Bird_layup.jpg",
+        playerVideo: "https://www.youtube.com/embed/mLVj4uzrSDY"
     },
     {
         name: "Bill Russell",
@@ -169,7 +177,8 @@ const players = [
         position: "Center",
         team: "Boston Celtics",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/78049.png",
-        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkxMjkwOTc1NzExMTQzNTIy/bill-russell-celtics-vault.jpg"
+        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkxMjkwOTc1NzExMTQzNTIy/bill-russell-celtics-vault.jpg",
+        playerVideo: "https://www.youtube.com/embed/asJt-3dpd90"
     },
     {
         name: "Lebron James",
@@ -179,7 +188,8 @@ const players = [
         position: "Power Forward / Small Forward",
         team: "Miami Heat",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png",
-        playerimg: "https://image-cdn.essentiallysports.com/wp-content/uploads/20201015004631/164213930.jpeg?width=900"
+        playerimg: "https://image-cdn.essentiallysports.com/wp-content/uploads/20201015004631/164213930.jpeg?width=900",
+        playerVideo: "https://www.youtube.com/embed/mE295ggKbHU"
     },
     {
         name: "Dwayne Wade",
@@ -189,7 +199,8 @@ const players = [
         position: "Shooting Guard",
         team: "Miami Heat",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1987.png",
-        playerimg: "https://assets-cms.thescore.com/uploads/image/file/211482/cropped_GettyImages-618675380.jpg?ts=1477634010"
+        playerimg: "https://assets-cms.thescore.com/uploads/image/file/211482/cropped_GettyImages-618675380.jpg?ts=1477634010",
+        playerVideo: "https://www.youtube.com/embed/pjkRwRmWpH8"
     },
     {
         name: "Chris Bosh",
@@ -199,7 +210,8 @@ const players = [
         position: "Center",
         team: "Miami Heat",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/2547.png",
-        playerimg: "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fhoopshabit.com%2Ffiles%2F2016%2F07%2Fchris-bosh-nba-miami-heat-houston-rockets.jpg"
+        playerimg: "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fhoopshabit.com%2Ffiles%2F2016%2F07%2Fchris-bosh-nba-miami-heat-houston-rockets.jpg",
+        playerVideo: "https://www.youtube.com/embed/mYanfTLamNs"
     },
 
     {
@@ -210,7 +222,8 @@ const players = [
         position: "Point Guard / Shooting Guard",
         team: "Philadelphia 76ers",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/947.png",
-        playerimg: "https://conteudo.imguol.com.br/c/esporte/84/2021/04/26/allen-iverson-em-acao-pelo-philadelphia-76ers-contra-o-dallas-mavericks-em-2001-1619445402369_v2_1x1.jpg"
+        playerimg: "https://conteudo.imguol.com.br/c/esporte/84/2021/04/26/allen-iverson-em-acao-pelo-philadelphia-76ers-contra-o-dallas-mavericks-em-2001-1619445402369_v2_1x1.jpg",
+        playerVideo: "https://www.youtube.com/embed/2REkZG-dhHc"
     },
     {
         name: "Joel Embiid",
@@ -220,7 +233,8 @@ const players = [
         position: "Center",
         team: "Philadelphia 76ers",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3059318.png&w=350&h=254",
-        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkzMzUxOTU3Mzc1NjI1MTIz/joel-embiid-76ers-slow-start.jpg"
+        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkzMzUxOTU3Mzc1NjI1MTIz/joel-embiid-76ers-slow-start.jpg",
+        playerVideo: "https://www.youtube.com/embed/3hvEYmT4pS4"
     },
     {
         name: "Moses Malone",
@@ -230,7 +244,8 @@ const players = [
         position: "Center",
         team: "Philadelphia 76ers",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/77449.png",
-        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MTg1NTQ1Nzk0NTk0MTc2/moses-malone-dies-age-60jpg.jpg"
+        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MTg1NTQ1Nzk0NTk0MTc2/moses-malone-dies-age-60jpg.jpg",
+        playerVideo: "https://www.youtube.com/embed/D4_JwbH800U"
     },
     {
         name: "Steph Curry",
@@ -240,7 +255,8 @@ const players = [
         position: "Point Guard",
         team: "Golden State Warriors",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3975.png&w=350&h=254",
-        playerimg: "https://upload.wikimedia.org/wikipedia/commons/3/36/Stephen_Curry_dribbling_2016_%28cropped%29.jpg"
+        playerimg: "https://upload.wikimedia.org/wikipedia/commons/3/36/Stephen_Curry_dribbling_2016_%28cropped%29.jpg",
+        playerVideo: "https://www.youtube.com/embed/2CHT0q8QBy4"
     },
     {
         name: "Klay Thompson",
@@ -250,7 +266,8 @@ const players = [
         position: "Shooting Guard",
         team: "Golden State Warriors",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6475.png&w=350&h=254",
-        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg4OTI4MzIwMTA3MTkzODU2/usatsi_18041846_168390270_lowres.jpg"
+        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg4OTI4MzIwMTA3MTkzODU2/usatsi_18041846_168390270_lowres.jpg",
+        playerVideo: "https://www.youtube.com/embed/kClWLPXGRZ8"
     },
     {
         name: "Kevin Durant",
@@ -260,7 +277,8 @@ const players = [
         position: "Power Forward",
         team: "Golden State Warriors",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254",
-        playerimg: "https://thespun.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgzMTI4MjU3MjI2MTU1NDI3/kevin-durant.jpg"
+        playerimg: "https://thespun.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgzMTI4MjU3MjI2MTU1NDI3/kevin-durant.jpg",
+        playerVideo: "https://www.youtube.com/embed/kxo4vusn8fk"
     },
     {
         name: "Michael Jordan",
@@ -270,7 +288,8 @@ const players = [
         position: "Shooting Guard",
         team: "Chicago Bulls",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/893.png",
-        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MjYxMzU5NzMxODExNjA1/michael-jordan-dunk1jpg.jpg"
+        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MjYxMzU5NzMxODExNjA1/michael-jordan-dunk1jpg.jpg",
+        playerVideo: "https://www.youtube.com/embed/XDSCLo4FBUE"
     },
     {
         name: "Scottie Pippen",
@@ -280,7 +299,8 @@ const players = [
         position: "Small Forward",
         team: "Chicago Bulls",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/663.png",
-        playerimg: "https://hoopshabit.com/wp-content/uploads/getty-images/2018/08/494368818.jpeg"
+        playerimg: "https://hoopshabit.com/wp-content/uploads/getty-images/2018/08/494368818.jpeg",
+        playerVideo: "https://www.youtube.com/embed/HTN7JZrBgbQ"
     },
     {
         name: "Derrick Rose",
@@ -290,7 +310,8 @@ const players = [
         position: "Point Guard",
         team: "Chicago Bulls",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/201565.png",
-        playerimg: "https://imageio.forbes.com/blogs-images/kurtbadenhausen/files/2015/02/derrick-rose_650x455.jpg?format=jpg&width=1200"
+        playerimg: "https://imageio.forbes.com/blogs-images/kurtbadenhausen/files/2015/02/derrick-rose_650x455.jpg?format=jpg&width=1200",
+        playerVideo: "https://www.youtube.com/embed/DQ9y-Brgy_U"
     },
 ]
 
