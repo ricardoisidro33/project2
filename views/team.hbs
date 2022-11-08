@@ -8,9 +8,10 @@
 </div>
 <div class="allplayersdiv">
 {{#each players}}
+
 <div class="eachplayerdiv">
 <img src="{{icon}}" alt="player" class="eachplayerimg1">
-<h2>{{name}}</h2>
+<a href="/player/{{_id}}"><h2>{{name}}</h2></a>
 </div>
 {{/each}}
 </div>
