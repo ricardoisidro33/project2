@@ -1,3 +1,16 @@
+<nav class="navbar bg-light">
+  <div class="container11">
+    <a class="navbar-brand" href="#">
+      <img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24">
+    </a>
+  </div>
+  <form action="/auth/logout" method="post">
+    <button class="logout-btn" type="submit"> Logout</button>
+</form>
+</nav>
+
+
+
 <div class="container">
 <h1>{{teams.name}}</h1>
 <p>Conference: {{teams.conference}}</p>
@@ -9,9 +22,22 @@
 <div class="allplayersdiv">
 {{#each players}}
 
-<div class="eachplayerdiv">
+
+<div class="eachplayerdiv" style="width: 18rem;">
+  <img src="{{icon}}" class="eachplayerimg1" alt="player">
+  <div class="card-body">
+    <a class="players-name" href="/player/{{_id}}"><h2>{{name}}</h2></a>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+
+
+
+
+{{!-- <div class="eachplayerdiv">
 <img src="{{icon}}" alt="player" class="eachplayerimg1">
 <a class="players-name" href="/player/{{_id}}"><h2>{{name}}</h2></a>
-</div>
+</div> --}}
 {{/each}}
 </div>

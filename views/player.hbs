@@ -1,3 +1,14 @@
+<nav class="navbar bg-light">
+  <div class="container11">
+    <a class="navbar-brand" href="#">
+      <img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24">
+    </a>
+  </div>
+  <form action="/auth/logout" method="post">
+    <button type="submit"> Logout</button>
+</form>
+</nav>
+
 
 <div class="container2">
 <h1>{{name}}</h1>
@@ -6,6 +17,10 @@
 <p>Number: {{number}}</p>
 <p>Position: {{position}}</p>
 <p>Team: {{team}}</p>
+
+
+
+
 <iframe width="350" height="220" src="{{playerVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <form action="/review/player/{{_id}}" method="post">
