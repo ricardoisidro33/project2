@@ -10,7 +10,11 @@ const playerSchema = new Schema(
         team: String,
         icon: String,
         playerimg: String,
-        playerVideo: String
+        playerVideo: String,
+        reviews: [{
+          type: Schema.Types.ObjectId,
+          ref: "Review"
+      }]
     },
     {
       // this second object adds extra properties: `createdAt` and `updatedAt`

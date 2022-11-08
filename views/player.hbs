@@ -8,10 +8,19 @@
 <p>Team: {{team}}</p>
 </div>
 <iframe width="350" height="220" src="{{playerVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{{!-- {{#each players}}
-<div class="eachplayerdiv">
-<img src="{{icon}}" alt="player" class="eachplayerimg1">
-<a href="/player/{{_id}}"><h2>{{name}}</h2></a>
+
+<form action="/review/player/{{_id}}" method="post">
+<label for="reviews">Content</label>
+    <textarea name="content" id="reviews" cols="30" rows="10"></textarea>
+    <button type="submit">Create Review</button>
+</form>
+
+{{#each reviews}}
+<div>
+
+    <p>{{content}} <span>By: {{author.username}}</span></p>
+    <form action="/delete-review/{{_id}}" method="post">
+        <button type="submit">Delete Review</button>
+    </form>
 </div>
-{{/each}} --}}
-{{!-- <iframe width="350" height="220" src="{{playerVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> --}}
+{{/each}}
