@@ -1,11 +1,12 @@
 
 <div class="container-">
 <h1>{{name}}</h1>
-<p class="player-info" >Height: {{height}}</p>
-<p class="player-info" >Weight: {{weight}}</p>
-<p class="player-info" >Number: {{number}}</p>
-<p class="player-info" >Position: {{position}}</p>
-<p class="player-info" >team: {{team}}</p>
+<p>Height: {{height}}</p>
+<p>Weight: {{weight}}</p>
+<p>Number: {{number}}</p>
+<p>Position: {{position}}</p>
+<p>Team: {{team}}</p>
+<iframe width="350" height="220" src="{{playerVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div class="allplayersdiv">
 {{#each players}}
@@ -13,5 +14,5 @@
 <img src="{{icon}}" alt="player" class="eachplayerimg1">
 <a href="/player/{{_id}}"><h2>{{name}}</h2></a>
 </div>
-<iframe width="350" height="220" src="{{playerVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {{/each}}
+{{!-- <iframe width="350" height="220" src="{{playerVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> --}}
