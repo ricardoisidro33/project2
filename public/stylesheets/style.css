@@ -48,6 +48,16 @@ span{
   color:#e90a2f
 }
 
+.logout{
+  margin-right: 30px;
+  border-radius: 5px;
+  background-color: #e90a2f;
+  color: #01408d;
+  width: 100px;
+  height: 30px;
+  font-size: 1.1rem;
+  border: none;
+}
 
 
 .input{
