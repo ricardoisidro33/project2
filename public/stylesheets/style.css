@@ -196,14 +196,15 @@ text-align: center;
   text-align: center;
   margin-bottom: 40px;
   border-radius: 10%;
-  background-color:rgba(232, 196, 175, 0.787);
+  background-color:rgba(236, 233, 229, 0.5);
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .players-name{
   text-decoration: none;
-  color:rgb(21, 102, 40)
+  color: black;
+
 }
 
 .eachplayerdiv h2{
@@ -274,4 +275,97 @@ text-align: center;
 }
 .navbar-toggler:focus{
 color: #e90a2f;
+}
+
+.collapse{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+
+.player-video{
+  width: 90vw;
+ margin: 0 auto;
+ height: 40vh;
+ margin-left: 15px;
+ border-radius: 5px;
+}
+
+.reviews-textarea{
+height: 60px;
+width: 70vw;
+align-items: flex-start;
+margin-left: 10px;
+border-radius: 5px;
+margin-bottom: 10px;
+
+}
+
+.playername-page{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.player-info{
+  margin-left: 15px;
+}
+
+.review-btn{
+  color:white;
+  background-color: #e90a2f;
+  margin-left: 15px;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+}
+
+.myprofile-title{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  color:#e90a2f
+}
+
+.btn-primary2{
+  color:white;
+  background-color:#01408d;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 100%
+}
+
+.credentials-edit{
+ display: flex;
+ flex-direction: column;
+ margin-left: 15px;
+ width: 60%; 
+}
+
+.credentials-change{
+  color:#01408d;
+  margin-bottom: 2px;
+}
+
+.email-change{
+  margin-top: 10px;
+}
+
+#editor{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.btn-profile-edit{
+  color:white;
+  background-color:#01408d;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 40%;
+  margin-top: 15px;
+  margin-left: 15px;
 }

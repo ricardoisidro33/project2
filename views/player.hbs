@@ -13,7 +13,7 @@
           <a class="nav-link" href="/profile/{{currentUser._id}}">Profile</a>
         </li>
         <form action="/auth/logout" method="post">
-    <button class="logout-btn" type="submit"> Logout</button>
+        <a href="/auth/logout">logout</a>
 </form>
      
       </ul>
@@ -23,27 +23,25 @@
 
 
 <div class="container2">
-<h1>{{player.name}}</h1>
-<p> <b> Height:</b> {{player.height}} meters</p>
-<p> <b>Weight:</b> {{player.weight}} kilograms</p>
-<p><b>Jersey Number:</b> {{player.number}}</p>
-<p><b>Position:</b> {{player.position}}</p>
-<p><b>Most Popular Team:</b> {{player.team}}</p>
+<h1 class="playername-page" >{{player.name}}</h1>
+<p class="player-info"> <b> Height:</b> {{player.height}} meters</p>
+<p class="player-info"> <b>Weight:</b> {{player.weight}} kilograms</p>
+<p class="player-info"><b>Jersey Number:</b> {{player.number}}</p>
+<p class="player-info"><b>Position:</b> {{player.position}}</p>
+<p class="player-info"><b>Most Popular Team:</b> {{player.team}}</p>
 
-<br>
-<br>
 <br>
 <br>
 <br>
 
 
 
-<iframe width="350" height="220" src="{{player.playerVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="player-video" width="350" height="220" src="{{player.playerVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <form action="/review/player/{{player._id}}" method="post">
 <label for="reviews"></label>
-    <textarea name="content" id="reviews" cols="30" rows="10"></textarea>
-    <button type="submit">Create Review</button>
+    <textarea class="reviews-textarea" name="content" id="reviews" cols="30" rows="10"></textarea>
+    <button class="review-btn" type="submit">Leave a review</button>
 </form>
 <br>
 {{#each player.reviews}}
