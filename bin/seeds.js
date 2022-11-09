@@ -74,6 +74,42 @@ const teams = [
         arena: "United Center",
         imgUrl: "https://seeklogo.com/images/C/chicago-bulls-logo-8530A1093D-seeklogo.com.png"
       },
+      {
+        name: "Memphis Grizzlies",
+        conference: "Western Conference",
+        division: "Southwest Division",
+        foundationyear: 1995,
+        titles: 0,
+        arena: "FedEx Forum",
+        imgUrl: "https://seeklogo.com/images/C/chicago-bulls-logo-8530A1093D-seeklogo.com.png"
+      },
+      {
+        name: "Dallas Mavericks",
+        conference: "Western Conference",
+        division: "Southwest Division",
+        foundationyear: 1980,
+        titles: 1,
+        arena: "American Airlines Center",
+        imgUrl: "https://seeklogo.com/images/C/chicago-bulls-logo-8530A1093D-seeklogo.com.png"
+      },
+      {
+        name: "Toronto Raptors",
+        conference: "Eastern Conference",
+        division: "Atlantic Division",
+        foundationyear: 1995,
+        titles: 1,
+        arena: "Air Canada Center",
+        imgUrl: "https://seeklogo.com/images/C/chicago-bulls-logo-8530A1093D-seeklogo.com.png"
+      },
+      {
+        name: "Detroit Pistons",
+        conference: "Eastern Conference",
+        division: "Central Division",
+        foundationyear: 1941,
+        titles: 3,
+        arena: "Little Caesars Arena",
+        imgUrl: "https://seeklogo.com/images/C/chicago-bulls-logo-8530A1093D-seeklogo.com.png"
+      },
 ]
 
 
@@ -233,7 +269,6 @@ const players = [
         position: "Center",
         team: "Philadelphia 76ers",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3059318.png&w=350&h=254",
-        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkzMzUxOTU3Mzc1NjI1MTIz/joel-embiid-76ers-slow-start.jpg",
         playerVideo: "https://www.youtube.com/embed/3hvEYmT4pS4"
     },
     {
@@ -255,7 +290,6 @@ const players = [
         position: "Point Guard",
         team: "Golden State Warriors",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3975.png&w=350&h=254",
-        playerimg: "https://upload.wikimedia.org/wikipedia/commons/3/36/Stephen_Curry_dribbling_2016_%28cropped%29.jpg",
         playerVideo: "https://www.youtube.com/embed/2CHT0q8QBy4"
     },
     {
@@ -266,7 +300,6 @@ const players = [
         position: "Shooting Guard",
         team: "Golden State Warriors",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6475.png&w=350&h=254",
-        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg4OTI4MzIwMTA3MTkzODU2/usatsi_18041846_168390270_lowres.jpg",
         playerVideo: "https://www.youtube.com/embed/kClWLPXGRZ8"
     },
     {
@@ -277,7 +310,6 @@ const players = [
         position: "Power Forward",
         team: "Golden State Warriors",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254",
-        playerimg: "https://thespun.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgzMTI4MjU3MjI2MTU1NDI3/kevin-durant.jpg",
         playerVideo: "https://www.youtube.com/embed/kxo4vusn8fk"
     },
     {
@@ -288,7 +320,6 @@ const players = [
         position: "Shooting Guard",
         team: "Chicago Bulls",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/893.png",
-        playerimg: "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MjYxMzU5NzMxODExNjA1/michael-jordan-dunk1jpg.jpg",
         playerVideo: "https://www.youtube.com/embed/XDSCLo4FBUE"
     },
     {
@@ -299,7 +330,6 @@ const players = [
         position: "Small Forward",
         team: "Chicago Bulls",
         icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/663.png",
-        playerimg: "https://hoopshabit.com/wp-content/uploads/getty-images/2018/08/494368818.jpeg",
         playerVideo: "https://www.youtube.com/embed/HTN7JZrBgbQ"
     },
     {
@@ -310,8 +340,127 @@ const players = [
         position: "Point Guard",
         team: "Chicago Bulls",
         icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/201565.png",
-        playerimg: "https://imageio.forbes.com/blogs-images/kurtbadenhausen/files/2015/02/derrick-rose_650x455.jpg?format=jpg&width=1200",
         playerVideo: "https://www.youtube.com/embed/DQ9y-Brgy_U"
+    },
+    {
+        name: "Ja Morant",
+        height: 1.91,
+        weight: 91,
+        number: 1,
+        position: "Point Guard",
+        team: "Memphis Grizzlies",
+        icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/1629630.png",
+        playerVideo: "https://www.youtube.com/embed/YXNjaccDiR8"
+    },
+    {
+        name: "Marc Gasol",
+        height: 2.11,
+        weight: 115,
+        number: 33,
+        position: "Center",
+        team: "Memphis Grizzlies",
+        icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3206.png&w=350&h=254",
+        playerVideo: "https://www.youtube.com/embed/qZg19q7aJjw"
+    },
+    {
+        name: "Pau Gasol",
+        height: 2.13,
+        weight: 113,
+        number: 16,
+        position: "Center",
+        team: "Memphis Grizzlies",
+        icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/996.png",
+        playerVideo: "https://www.youtube.com/embed/vaBcef35mww"
+    },
+    {
+        name: "Luka Doncic",
+        height: 2.01,
+        weight: 104,
+        number: 77,
+        position: "Point Guard",
+        team: "Dallas Mavericks",
+        icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3945274.png&w=350&h=254",
+        playerVideo: "https://www.youtube.com/embed/Igbm8owLhyg"
+    },
+    {
+        name: "Dirk Nowitzki",
+        height: 2.13,
+        weight: 111,
+        number: 41,
+        position: "Power Forward",
+        team: "Dallas Mavericks",
+        icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/1717.png",
+        playerVideo: "https://www.youtube.com/embed/z9ZHcSX3TWY"
+    },
+    {
+        name: "Jason Kidd",
+        height: 1.93,
+        weight: 95,
+        number: 2,
+        position: "Point Guard",
+        team: "Dallas Mavericks",
+        icon: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/429.png",
+        playerVideo: "https://www.youtube.com/embed/iqflzZbTpDw"
+    },
+    {
+        name: "Kawhi Leonard",
+        height: 2.01,
+        weight: 104,
+        number: 2,
+        position: "Small Forward",
+        team: "Toronto Raptors",
+        icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/202695.png",
+        playerVideo: "https://www.youtube.com/embed/5JWAx19dmbk"
+    },
+    {
+        name: "Vince Carter",
+        height: 1.98,
+        weight: 100,
+        number: 15,
+        position: "Shooting Guard",
+        team: "Toronto Raptors",
+        icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/1713.png",
+        playerVideo: "https://www.youtube.com/embed/ig5fN6XVq-4"
+    },
+    {
+        name: "Kyle Lowry",
+        height: 1.83,
+        weight: 89,
+        number: 7,
+        position: "Point Guard",
+        team: "Toronto Raptors",
+        icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/200768.png",
+        playerVideo: "https://www.youtube.com/embed/y1_ikd7XiSM"
+    },
+    {
+        name: "Ben Wallace",
+        height: 2.06,
+        weight: 109,
+        number: 3,
+        position: "Small Forward",
+        team: "Detroit Pistons",
+        icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/1112.png",
+        playerVideo: "https://www.youtube.com/embed/wPRLMb-AET4"
+    },
+    {
+        name: "Isiah Thomas",
+        height: 1.85,
+        weight: 82,
+        number: 11,
+        position: "Point Guard",
+        team: "Detroit Pistons",
+        icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/78318.png",
+        playerVideo: "https://www.youtube.com/embed/PVTIB_j8EU8"
+    },
+    {
+        name: "Dennis Rodman",
+        height: 2.01,
+        weight: 100,
+        number: 10,
+        position: "Power Forward",
+        team: "Detroit Pistons",
+        icon: "https://cdn.nba.com/headshots/nba/latest/1040x760/23.png",
+        playerVideo: "https://www.youtube.com/embed/XBoVDIvOrfI"
     },
 ]
 

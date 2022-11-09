@@ -1,12 +1,13 @@
 <nav class="navbar bg-light">
   <div class="container11">
     <a class="navbar-brand" href="#">
-      <img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24">
+      <a href="/"><img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24"></a>
     </a>
   </div>
   <form action="/auth/logout" method="post">
-    <button type="submit"> Logout</button>
+    <button class="logout-btn" type="submit"> Logout</button>
 </form>
+<a href="/profile/{{currentUser._id}}">Profile</a>
 </nav>
 
 
