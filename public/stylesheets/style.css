@@ -23,7 +23,14 @@ span{
 }
 
 
-
+/* https://pngimg.com/uploads/nba/nba_PNG2.png  */
+#login-page{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/Logo-NBA.png");
+  background-position: center;
+  background-size: cover;
+}
 
 #login-form{
   position: absolute;
@@ -37,6 +44,8 @@ span{
   background-color: rgb(227, 223, 223, 0.5);
   border-radius: 5%
 }
+
+
 
 .login-btn{
   width:100px;
@@ -59,15 +68,18 @@ span{
 }
 
 .email{
-  color: #01408d
+  color: #01408d;
+  text-align: left;
 }
 
 .password{
-  color:#e90a2f
+  color:#e90a2f;
+  text-align: left;
 }
 
 .username{
-  color:#e90a2f
+  color:#e90a2f;
+  text-align: left;
 }
 
 .logout{
@@ -96,9 +108,8 @@ span{
   flex-direction: column;
   width:90px;
   margin: 0 auto;
-  align-items: center;
   padding-bottom: 20px;
-
+  width:80%;
 }
 
 .nba-logo{
@@ -142,16 +153,14 @@ text-align: center;
  /*  border: 3px solid black; */
   margin-bottom: 35px;
   border-radius: 5px;
-  padding-left: 10px;
+ /*  padding-left: 20px; */
   padding-top:35px;
   width: 190px;
   height: 230px;
   /* text-align: center; */
   align-items: center;
   border-radius: 10%;
-  background-color: rgb(178, 122, 38);
-
-
+  background-color: rgba(236, 233, 229, 0.5);
 }
 
 .teamdetails{
@@ -254,6 +263,15 @@ text-align: center;
   border-radius: 5px;;
 }
 
-.signup-login-btns{
+/* .signup-login-btns{
   text-decoration: none;
+} */
+
+.inputs2{
+  border: 1px solid rgb(190, 189, 189);
+  border-radius: 5px;
+  margin-top: 4px;
+}
+.navbar-toggler:focus{
+color: #e90a2f;
 }

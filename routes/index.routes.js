@@ -71,13 +71,19 @@ router.post("/review/player/:id", async(req,res,next)=>{
 
 
 
-router.post("/delete-review/:id", (req,res,next)=>{
+router.post("/delete-review/:id", async(req,res,next)=>{
 const reviewId = req.params.id
-const id = req.session.user._id;
-const currentUser = req.session.currentUser
-Review.findByIdAndRemove(id, reviewId).then((review) => {
-  res.redirect(`/player/${review.player}`, {currentUser})
-})
+const id = req.session.currentUser._id;
+//const curr
+ const reviewToDelete = await Review.findById(reviewId)
+
+ if(reviewToDelete.author === id ){
+   await Review.findByIdAndRemove(reviewId);
+   res.redirect('/')
+ } else {
+  res.redirect("/")
+ }
+
 })
 
 
@@ -86,9 +92,9 @@ router.get("/profile/:id",isLoggedIn, async (req,res,next) =>{
   try {
    const {id} = req.params
    const userId =  req.session.currentUser._id
-   const currentUser = req.session.currentUser
+
    const user = await User.find();
-   console.log(currentUser.username)
+
    res.render("profile", {user, userId, id})
   } catch (error) {
     console.log(error)
