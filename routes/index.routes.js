@@ -40,9 +40,10 @@ router.get("/team/:id",isLoggedIn, async (req,res,next) =>{
 
 router.get("/player/:id",isLoggedIn, async (req,res,next) =>{
   try {
+    const userId = req.session.currentUser._id
    const {id} = req.params
    let player = await Player.findById(id).populate("reviews").populate({path: "reviews", populate: { path: "author", model: "User"}})
-        res.render('player', player)
+        res.render('player', {player, userId})
   } catch (error) {
     console.log(error)
     next(error);
@@ -71,14 +72,26 @@ router.post("/review/player/:id", async(req,res,next)=>{
 
 
 
-router.post("/delete-review/:id", (req,res,next)=>{
-const reviewId = req.params.id
-const id = req.session.user._id;
-const currentUser = req.session.currentUser
-Review.findByIdAndRemove(id, reviewId).then((review) => {
-  res.redirect(`/player/${review.player}`, {currentUser})
-})
-})
+router.post("/delete-review/:id", async(req,res,next)=>{
+  const reviewId = req.params.id
+  const id = req.session.currentUser._id;
+  //const 
+  try {
+     const reviewToDelete = await Review.findById(reviewId)
+  
+   if(reviewToDelete.author == id ){
+     await Review.findByIdAndRemove(reviewId);
+     res.redirect('/')
+   } else {
+    res.redirect("/")
+   }
+  } catch (error) {
+    console.log(error)
+    next(error);
+  }
+  
+  
+  })
 
 
 
@@ -87,7 +100,7 @@ router.get("/profile/:id",isLoggedIn, async (req,res,next) =>{
    const {id} = req.params
    const userId =  req.session.currentUser._id
    const currentUser = req.session.currentUser
-   const user = await User.find();
+   const user = await User.findById(userId);
    console.log(currentUser.username)
    res.render("profile", {user, userId, id})
   } catch (error) {
@@ -103,30 +116,42 @@ router.get("/profile-edit/:id", isLoggedIn, async (req,res,next) =>{
     const {id} = req.params
     const userId =  req.session.currentUser._id
     const currentUser = req.session.currentUser
-    let user = await User.find();
+    let user = await User.findById(userId);
     console.log(currentUser.username)
-    res.render("profile-edit", {userId})
+    res.render("profile-edit", {user})
   } catch (error) {
       console.log(error)
       next(error);
   }
 })
 
-router.post("/profile_edit/:id", async (req,res,next) =>{
+router.post("/profile-edit/:id", async (req,res,next) =>{
   try {
       const {id} = req.params
+      const {email} = req.body
       const userId =  req.session.currentUser._id
    const currentUser = req.session.currentUser
-   const updatedUser = await User.findByIdAndUpdate(userId,
+   const updatedUser = await User.findByIdAndUpdate(id,
     {
-      username, password, email
+      email
     })
+    res.redirect(`/profile/${userId}`)
   } catch (error) {
       console.log(error)
       next(error);
   }
 })
 
+router.post("/profile/delete/:id", async (req,res,next) =>{
+  try {
+      const {id} = req.params
+      await User.findByIdAndDelete(id)
+      res.redirect('/auth/logout')
+  } catch (error) {
+      console.log(error)
+      next(error)
+  }
+})
 
 
 module.exports = router;
