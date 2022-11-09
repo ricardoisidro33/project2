@@ -5,7 +5,7 @@
     </a>
   </div>
   <form action="/auth/logout" method="post">
-    <button type="submit"> Logout</button>
+    <button class="logout-btn" type="submit"> Logout</button>
 </form>
 </nav>
 
@@ -18,6 +18,11 @@
 <p>Position: {{position}}</p>
 <p>Team: {{team}}</p>
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
@@ -30,7 +35,7 @@
 </form>
 
 {{#each reviews}}
-<div>
+<div class = "reviews">
 
     <p>{{content}} <span>By: {{author.username}}</span></p>
     <form action="/delete-review/{{_id}}" method="post">

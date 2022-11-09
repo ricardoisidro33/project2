@@ -1,7 +1,7 @@
-<div id="form">
-  
   <div class="signup">
-  <h2>Sign Up</h2>
+<div id="signup-form">
+  
+  <h2 class="h2"><span class="span ">Sign</span>up</h2>
   <form action="/auth/signup" method="POST">
 
 <div class="credentials">
@@ -18,7 +18,10 @@
     </label>
     </div>
 
-    <button class="signup-btn" type="submit">Sign Up</button>
+   <button class="signup-btn" type="submit">Sign Up</button>
+
+    <p>Already have an account?</p>
+    <a class="signup-login-btns" href="/auth/login">Login</a>
 </div>
 
     {{#if errorMessage}}
