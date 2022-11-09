@@ -1,7 +1,7 @@
 <nav class="navbar bg-light">
   <div class="container11">
     <a class="navbar-brand" href="#">
-      <img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24">
+      <a href="/"><img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24"></a>
     </a>
   </div>
   <form action="/auth/logout" method="post">
@@ -12,11 +12,11 @@
 
 <div class="container2">
 <h1>{{name}}</h1>
-<p>Height: {{height}}</p>
-<p>Weight: {{weight}}</p>
-<p>Number: {{number}}</p>
-<p>Position: {{position}}</p>
-<p>Team: {{team}}</p>
+<p> <b> Height:</b> {{height}} meters</p>
+<p> <b>Weight:</b> {{weight}} kilograms</p>
+<p><b>Jersey Number:</b> {{number}}</p>
+<p><b>Position:</b> {{position}}</p>
+<p><b>Most Popular Team:</b> {{team}}</p>
 
 <br>
 <br>
@@ -27,19 +27,25 @@
 
 
 <iframe width="350" height="220" src="{{playerVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<br>
 <form action="/review/player/{{_id}}" method="post">
-<label for="reviews">Content</label>
+<label for="reviews"></label>
     <textarea name="content" id="reviews" cols="30" rows="10"></textarea>
     <button type="submit">Create Review</button>
 </form>
-
+<br>
 {{#each reviews}}
+<<<<<<< HEAD
 <div class = "reviews">
 
+=======
+>>>>>>> 553de61d95979406039528906b5d58683e8d7838
     <p>{{content}} <span>By: {{author.username}}</span></p>
+    {{#if currentUser}}
     <form action="/delete-review/{{_id}}" method="post">
+<div> 
         <button type="submit">Delete Review</button>
     </form>
 </div>
+{{/if}}
 {{/each}}

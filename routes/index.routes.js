@@ -11,9 +11,10 @@ const isLoggedIn = require("../middleware/isLoggedIn");
 /* GET home page */
 router.get("/", isLoggedIn, async (req, res, next) => {
   try {
+    const currentUser = req.session.currentUser
     let teams = await Team.find();
   console.log(teams.name)
-  res.render("index", {teams});
+  res.render("index", {teams, currentUser});
   } catch (error) {
     console.log(error)
       next(error);
@@ -72,15 +73,59 @@ router.post("/review/player/:id", async(req,res,next)=>{
 
 router.post("/delete-review/:id", (req,res,next)=>{
 const reviewId = req.params.id
-Review.findByIdAndRemove(reviewId).then((review) => {
-  res.redirect(`/player/${review.player}`)
+const id = req.session.user._id;
+const currentUser = req.session.currentUser
+Review.findByIdAndRemove(id, reviewId).then((review) => {
+  res.redirect(`/player/${review.player}`, {currentUser})
+})
 })
 
+
+
+router.get("/profile/:id",isLoggedIn, async (req,res,next) =>{
+  try {
+   const {id} = req.params
+   const userId =  req.session.currentUser._id
+   const currentUser = req.session.currentUser
+   const user = await User.find();
+   console.log(currentUser.username)
+   res.render("profile", {user, userId, id})
+  } catch (error) {
+    console.log(error)
+    next(error);
+  }
 })
 
 
 
+router.get("/profile-edit/:id", isLoggedIn, async (req,res,next) =>{
+  try {
+    const {id} = req.params
+    const userId =  req.session.currentUser._id
+    const currentUser = req.session.currentUser
+    let user = await User.find();
+    console.log(currentUser.username)
+    res.render("profile-edit", {userId})
+  } catch (error) {
+      console.log(error)
+      next(error);
+  }
+})
 
+router.post("/profile_edit/:id", async (req,res,next) =>{
+  try {
+      const {id} = req.params
+      const userId =  req.session.currentUser._id
+   const currentUser = req.session.currentUser
+   const updatedUser = await User.findByIdAndUpdate(userId,
+    {
+      username, password, email
+    })
+  } catch (error) {
+      console.log(error)
+      next(error);
+  }
+})
 
 
 
