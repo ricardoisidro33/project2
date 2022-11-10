@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
-      <img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24">
+      <img class ="nba-logo" src="/images/NBA-horiz.png" alt="NBA-logo" width="30" height="24">
       </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
 
 
 <div class="container2">
-<h1 class="playername-page" >{{player.name}}</h1>
+<h1 class="playername-page" > <b> {{player.name}} </b></h1>
 <p class="player-info"> <b> Height:</b> {{player.height}} meters</p>
 <p class="player-info"> <b>Weight:</b> {{player.weight}} kilograms</p>
 <p class="player-info"><b>Jersey Number:</b> {{player.number}}</p>
@@ -47,13 +47,13 @@
 {{#each player.reviews}}
 <div class = "reviews">
 
-    <p>{{content}} <span>By: {{author.username}}</span></p>
+    <p class="review">{{content}} <span>  <br> <b>By:</b> {{author.username}}</span></p>
 
     {{#ifEquals author._id ../userId}}
 
     <form action="/delete-review/{{_id}}" method="post">
 <div> 
-        <button type="submit">Delete Review</button>
+        <button class="delete-review-btn" type="submit">Delete Review</button>
     </form>
 
     {{/ifEquals}}

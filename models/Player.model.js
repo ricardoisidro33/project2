@@ -9,7 +9,6 @@ const playerSchema = new Schema(
         position: String,
         team: String,
         icon: String,
-        playerimg: String,
         playerVideo: String,
         reviews: [{
           type: Schema.Types.ObjectId,

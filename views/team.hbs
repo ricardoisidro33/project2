@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
-      <img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24">
+      <img class ="nba-logo" src="/images/NBA-horiz.png" alt="NBA-logo" width="30" height="24">
       </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,25 +24,26 @@
 
 
 <div class="container">
-<h1 class="team-h1" >{{teams.name}}</h1>
-<p>Conference: {{teams.conference}}</p>
-<p>Division: {{teams.division}}</p>
-<p>Foundation Year: {{teams.foundationyear}}</p>
-<p>Number of Titles: {{teams.titles}}</p>
-<p>Arena: {{teams.arena}}</p>
+<h1>{{teams.name}}</h1>
+<p> <b> Conference:</b> {{teams.conference}}</p>
+<p> <b>Division:</b>  {{teams.division}}</p>
+<p><b>Foundation Year:</b> {{teams.foundationyear}}</p>
+<p><b>Number of Titles:</b> {{teams.titles}}</p>
+<p><b>Arena:</b> {{teams.arena}}</p>
 </div>
 <div class="allplayersdiv">
 {{#each players}}
 
 
+    <a class="players-name" href="/player/{{_id}}">
 <div class="eachplayerdiv" style="width: 18rem;">
   <img src="{{icon}}" class="eachplayerimg1" alt="player">
+  <h2>{{name}}</h2>
   <div class="card-body">
-    <a class="players-name" href="/player/{{_id}}"><h2>{{name}}</h2></a>
     <p class="card-text">More about this player{{!-- <b>{{name}}</b> --}}</p>
   </div>
+</a>
 </div>
-
 
 
 
