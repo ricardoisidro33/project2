@@ -1203,27 +1203,3 @@ const players = [
             playerVideo: "https://www.youtube.com/embed/oV6lxF7onik"
         },
 ]
-
-
-
-async function seeds(){
-    try{
-
-    
-    const x = await mongoose.connect("mongodb+srv://Ricardo:12345@project.nlqoh6b.mongodb.net/?retryWrites=true&w=majority")
-    console.log(`Connected to: ${x.connections[0].name}`);
-
-        //Adding books to DB
-   let createdTeams = await Team.create(teams);
-   const createdPlayers= await Player.create(players);
-console.log(`Successfuly created ${createdTeams.length}`);
-console.log(`Successfuly created ${createdPlayers.length}`);
-
-    x.disconnect()
-}
-catch(error){
-    console.log(error)
-}
-  }
-
-  seeds(); 

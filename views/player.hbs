@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
@@ -7,14 +8,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-  
+      <ul class="navbar-nav2">
         <li class="nav-item">
           <a class="nav-link" href="/profile/{{currentUser._id}}">Profile</a>
         </li>
-        <form action="/auth/logout" method="post">
+        <form action="/auth/logout" method="post" class="form-log">
         <a href="/auth/logout">Logout</a>
-</form>
+        </form>
+        
      
       </ul>
     </div>
@@ -23,6 +24,7 @@
 
 
 <div class="container2">
+  <div class="container-players">
 <h1 class="playername-page" > <b> {{player.name}} </b></h1>
 <p class="player-info"> <b> Height:</b> {{player.height}} meters</p>
 <p class="player-info"> <b>Weight:</b> {{player.weight}} kilograms</p>
@@ -30,6 +32,7 @@
 <p class="player-info"><b>Position:</b> {{player.position}}</p>
 <p class="player-info"><b>Most Popular Team:</b> {{player.team}}</p>
 
+</div>
 <br>
 <br>
 <br>
@@ -39,9 +42,9 @@
 <iframe class="player-video" width="350" height="220" src="{{player.playerVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <form action="/review/player/{{player._id}}" method="post">
-<label for="reviews"></label>
+<label class="reviews-area-btn" for="reviews"></label>
     <textarea class="reviews-textarea" name="content" id="reviews" cols="30" rows="10"></textarea>
-    <button class="review-btn" type="submit">Leave a review</button>
+    <button class="review-btn r-b" type="submit">Leave a review</button>
 </form>
 <br>
 {{#each player.reviews}}

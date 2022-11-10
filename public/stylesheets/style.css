@@ -147,21 +147,34 @@ text-align: center;
 .container{
   border: 2px solid rgba(220, 219, 218, 0.5);
   margin-top: 50px;
-  width: 270px;
+  width: 300px;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border-radius: 10%;
+  border-radius: 30px;
   align-items:stretch;
   padding:20px;
  
+}
+
+.container-players{
+ border: 2px solid rgba(220, 219, 218, 0.5);
+ display: flex;
+ flex-direction: column;
+ margin-top: 50px;
+ width: 90vw;
+/*  margin: 0 auto; */
+ height: 40vh;
+ margin-left: 15px;
+ border-radius: 30px;
+
 }
 .eachteamdiv{
   border: 2px solid rgba(220, 219, 218, 0.5);
   margin-bottom: 35px;
   padding: 30px;
   border-radius: 5px;
-  min-width: 300px;
+  min-width: 340px;
  /*  padding-left: 20px; */
   /* text-align: center; */
   align-items: center;
@@ -182,6 +195,7 @@ text-align: center;
 .teamdetails{
   text-decoration: none;
   color:black;
+
 }
 
 .allteamsdiv{
@@ -238,9 +252,11 @@ text-align: center;
 }
 
 .container2{
+  
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
 }
 
 
@@ -311,7 +327,7 @@ align-items: flex-end;
  margin: 0 auto;
  height: 40vh;
  margin-left: 15px;
- border-radius: 5px;
+ border-radius: 30px;
 }
 
 .reviews-textarea{
@@ -319,7 +335,7 @@ height: 60px;
 width: 70vw;
 align-items: flex-start;
 margin-left: 10px;
-border-radius: 5px;
+border-radius: 10px;
 margin-bottom: 10px;
 
 }
@@ -338,7 +354,7 @@ margin-bottom: 10px;
   color:white;
   background-color: #01408d;
   margin-left: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   height: 30px;
 }
@@ -346,7 +362,7 @@ margin-bottom: 10px;
 .review{
   margin-left: 15px;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 70vw;
   padding: 4px 6px;
 
@@ -356,7 +372,7 @@ margin-bottom: 10px;
   color:white;
   background-color: #e90a2f;
   margin-left: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   height: 30px;
 }
@@ -411,7 +427,22 @@ margin-bottom: 10px;
   margin-top: 15px;
   margin-left: 15px;
 }
+.navbar-nav2{
+  margin-top: 10px;
+  list-style: none;
+}
+.form-log {
+  margin-top: 10px;
+}
 
+.first-btn {
+  margin-top: 17px;
+}
+.card {
+  margin: 10px;
+  
+}
+/* ----------------------------------------- Query--------------------------------------------------- */
 @media (min-width: 1100px) {
  
   .allteamsdiv{
@@ -420,8 +451,8 @@ margin-bottom: 10px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-  
+    justify-content: space-around;
+    
   }
 
   .player-video{
@@ -429,13 +460,24 @@ margin-bottom: 10px;
    margin: 0 auto;
    height: 80vh;
    margin-left: 15px;
-   border-radius: 5px;
+   border-radius: 30px;
+  }
+
+  .name-team {
+    font-size: 21px;
   }
 
   .navbar-nav2{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    list-style: none;
+  }
+
+  .form-log {
+    position: absolute;
+    top: 12px;
+    right: 65px;
   }
 
 
@@ -470,19 +512,19 @@ margin-bottom: 10px;
   .container{
     border: 2px solid rgba(220, 219, 218, 0.5);
     padding: 20px;
-    margin-left: 10px;
-    width: 500px;
+    margin-left: 140px;
+    width: 480px;
     height: 300px;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border-radius: 10%;
+    border-radius: 30px;
     align-items:stretch;
     padding:20px;
    
   }
 
-}
+
 
 #signup-form{
   position: relative;
@@ -497,3 +539,70 @@ margin-bottom: 10px;
   border-radius: 5%
   }
 
+
+/* ------------------------------------------- Players --------------------------------------------- */
+
+.container-players{
+  border: 2px solid rgba(220, 219, 218, 0.5);
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 70vw;
+ /*  margin: 0 auto; */
+  height: 40vh;
+  margin-left: 15px;
+  border-radius: 30px;
+  margin-bottom: 60px;
+ 
+ }
+
+ .player-video{
+  width: 70vw;
+ margin: 0 auto;
+ height: 80vh;
+ margin-left: 15px;
+ border-radius: 5px;
+ margin-bottom: 30px;
+}
+
+.reviews-textarea{
+  height: 60px;
+  width: 70vw;
+  align-items: flex-start;
+  margin-left: 10px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  
+  }
+ .review-btn{
+  color:white;
+  background-color: #01408d;
+  margin-left: 15px;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  align-items: flex-start;
+}
+
+/* .card-body {
+  margin: 125px;
+} */
+
+.card {
+  height: 200px;
+  line-height: 25px;
+}
+.card-title {
+  margin-top: 14px;
+}
+.first-btn {
+  margin-top: 29px;
+}
+
+.r-b {
+  position: absolute;
+  left: 0;
+  bottom: -515px;
+}
+
+}

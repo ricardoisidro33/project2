@@ -12,7 +12,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/profile/{{currentUser._id}}">Profile</a>
         </li>
-        <form action="/auth/logout" method="post">
+        <form action="/auth/logout" method="post" class="form-log">
         <a href="/auth/logout">Logout</a>
         </form>
         
@@ -32,7 +32,7 @@
 {{#each teams}}
 <a href='/team/{{_id}}' class="teamdetails {{_id}}">
 <div class="eachteamdiv">
-<h3>{{name}}</h3>
+<h3 class="name-team">{{name}}</h3>
 <img src="{{imgUrl}}" alt="fgdg" class="teamimg">
 <br>
 
