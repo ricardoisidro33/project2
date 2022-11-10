@@ -1,7 +1,7 @@
 <nav class="navbar bg-light">
   <div class="container11">
     <a class="navbar-brand" href="#">
-      <a href="/"><img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24"></a>
+      <a href="/"><img class ="nba-logo" src="/images/NBA-horiz.png" alt="NBA-logo" width="30" height="24"></a>
     </a>
   </div>
 {{!--   <form action="/auth/logout" method="post">
@@ -12,17 +12,17 @@
 
 
 <section id="editor">
-    <div class="card" style="width: 160px;">
+    <div class="card" style="">
       <div class="card-body">
         <h5 class="card-title">Edit me.</h5>
-        <p class="card-text">if you want to change your credentials, click in the button above.</p>
-        <a href="/profile-edit/{{userId}}" class="btn btn-primary2" style="margin-left: 0px">Edit profile</a>
+        <p class="card-text">if you want to change your credentials, click in the button below.</p>
+        <a href="/profile-edit/{{userId}}" class="btn btn-primary2 first-btn" style="margin-left: 0px">Edit profile</a>
       </div>
     </div>
-    <div class="card" style="width: 160px;">
+    <div class="card" style="">
       <div class="card-body text-left">
         <h5 class="card-title">Delete me.</h5>
-        <p class="card-text">if you want to delete your profile, click in the button above.</p>
+        <p class="card-text">if you want to delete your profile, click in the button below.</p>
         <br>
         <form action="/profile/delete/{{userId}}" method="post">
         <button class="btn btn-primary2" style="margin-left: 0px" type="submit">Delete profile</a>

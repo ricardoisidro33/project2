@@ -25,11 +25,12 @@ router.get("/", isLoggedIn, async (req, res, next) => {
 
 router.get("/team/:id",isLoggedIn, async (req,res,next) =>{
   try {
+    const currentUser = req.session.currentUser
    const {id} = req.params
    let teams = await Team.findById(id)
    
    let players = await Player.find({'team':`${teams.name}` })
-   res.render('team', {teams, players})
+   res.render('team', {teams, players, currentUser})
 
   } catch (error) {
     console.log(error)
@@ -40,10 +41,11 @@ router.get("/team/:id",isLoggedIn, async (req,res,next) =>{
 
 router.get("/player/:id",isLoggedIn, async (req,res,next) =>{
   try {
+    const currentUser = req.session.currentUser
     const userId = req.session.currentUser._id
    const {id} = req.params
    let player = await Player.findById(id).populate("reviews").populate({path: "reviews", populate: { path: "author", model: "User"}})
-        res.render('player', {player, userId})
+        res.render('player', {player, userId, currentUser})
   } catch (error) {
     console.log(error)
     next(error);
