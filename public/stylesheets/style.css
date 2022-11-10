@@ -27,7 +27,7 @@ span{
 #login-page{
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/Logo-NBA.png");
+  /* background-image: url("../images/Logo-NBA.png"); */
   background-position: center;
   background-size: cover;
 }
@@ -55,9 +55,12 @@ span{
   border-radius: 5px;
   height: 30px;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
-
+.login-btn:hover{
+  background-color: #01408d;
+}
 
 
 
@@ -123,24 +126,27 @@ a {
 
 .mainpage{
 text-align: center;
+}
 
-
+.team-h1{
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .h1{
   text-align: center;
   margin: 0 auto;
-  margin-top:50px;
-  margin-bottom: 50px;
+  margin-top:30px;
+  margin-bottom: 30px;
   color: white;
   padding-top: 10px;
   color:#01408d
 }
 
 .container{
-  border: 3px solid black;
-/*   margin: 50px; */
-  width: 330px;
+  border: 2px solid rgba(220, 219, 218, 0.5);
+  margin-top: 50px;
+  width: 270px;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -150,22 +156,31 @@ text-align: center;
  
 }
 .eachteamdiv{
- /*  border: 3px solid black; */
+  border: 2px solid rgba(220, 219, 218, 0.5);
   margin-bottom: 35px;
+  padding: 30px;
   border-radius: 5px;
+  min-width: 300px;
  /*  padding-left: 20px; */
-  padding-top:35px;
-  width: 190px;
-  height: 230px;
   /* text-align: center; */
   align-items: center;
   border-radius: 10%;
   background-color: rgba(236, 233, 229, 0.5);
+  cursor: pointer;
+  box-shadow: 0 4px 10px 4px rgba(35, 34, 34, 0.1), 0 4px 8px 0 rgba(94, 93, 93, 0.1);
+}
+
+.eachteamdiv h3{
+  margin-bottom: 20px;
+}
+
+.eachteamdiv:hover {
+  color:rgba(220, 219, 218, 0.5);
 }
 
 .teamdetails{
   text-decoration: none;
-  color:black
+  color:black;
 }
 
 .allteamsdiv{
@@ -174,7 +189,6 @@ text-align: center;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 20px;
 
 }
 
@@ -184,26 +198,27 @@ text-align: center;
 }
 
 .eachplayerimg1{
-  width: 260px;
-  height: 200px;
+  width: 100%;
   /* border: 2px solid black; */
 }
 
 
 .eachplayerdiv{
-  /* border: 3px solid black; */
+  border: 2px solid rgba(220, 219, 218, 0.5);;
   width: 300px;
   text-align: center;
   margin-bottom: 40px;
   border-radius: 10%;
-  background-color:rgba(232, 196, 175, 0.787);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  background-color:rgba(236, 233, 229, 0.5);
+  padding: 20px;
+  box-shadow: 0 4px 10px 4px rgba(35, 34, 34, 0.1), 0 4px 8px 0 rgba(94, 93, 93, 0.1);
+  
 }
 
 .players-name{
   text-decoration: none;
-  color:rgb(21, 102, 40)
+  color: black;
+
 }
 
 .eachplayerdiv h2{
@@ -274,4 +289,103 @@ text-align: center;
 }
 .navbar-toggler:focus{
 color: #e90a2f;
+}
+
+.nav-link{
+color:#01408d;
+text-decoration: underline;
+
+}
+
+.collapse{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+
+.player-video{
+  width: 90vw;
+ margin: 0 auto;
+ height: 40vh;
+ margin-left: 15px;
+ border-radius: 5px;
+}
+
+.reviews-textarea{
+height: 60px;
+width: 70vw;
+align-items: flex-start;
+margin-left: 10px;
+border-radius: 5px;
+margin-bottom: 10px;
+
+}
+
+.playername-page{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.player-info{
+  margin-left: 15px;
+}
+
+.review-btn{
+  color:white;
+  background-color: #e90a2f;
+  margin-left: 15px;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+}
+
+.myprofile-title{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  color:#e90a2f
+}
+
+.btn-primary2{
+  color:white;
+  background-color:#01408d;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 100%
+}
+
+.credentials-edit{
+ display: flex;
+ flex-direction: column;
+ margin-left: 15px;
+ width: 60%; 
+}
+
+.credentials-change{
+  color:#01408d;
+  margin-bottom: 2px;
+}
+
+.email-change{
+  margin-top: 10px;
+}
+
+#editor{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.btn-profile-edit{
+  color:white;
+  background-color:#01408d;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 40%;
+  margin-top: 15px;
+  margin-left: 15px;
 }

@@ -1,20 +1,39 @@
-<h1>Edit your profile</h1>
+
+<nav class="navbar bg-light">
+  <div class="container11">
+    <a class="navbar-brand" href="#">
+      <a href="/"><img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24"></a>
+    </a>
+  </div>
+{{!--   <form action="/auth/logout" method="post">
+    <a href="/auth/logout">logout</a>
+</form> --}}
+</nav>
+
+
+<h1 class="myprofile-title">Edit your profile</h1>
 <form action="/profile-edit/{{user._id}}" method="post">
 
-<label for="username">Username</label>
-<input type="text" name="username" id="username" value="{{username}}">
+{{!-- <label for="username">Username</label>
+<input type="text" name="username" id="username" value="{{username}}"> --}}
+<div class="credentials-edit">
+    <label class="credentials-change" for="username">Username</label>
+    <input type="text" name="username" id="username" value="{{username}}">
 
-<label for="email">Email</label>
-<input type="text" name="email" id="email" value="{{email}}">
+    <label class="credentials-change email-change" for="email">Email</label>
+    <input type="text" name="email" id="email" value="{{email}}">
+</div>
+{{!-- <label for="password">Password</label>
+<input type="password" name="password" id="password"></input> --}}
 
 
-<button type="submit">Edit Profile</button>
+<button class="btn-profile-edit" type="submit">Edit Profile</button>
 </form>
 
-<form action="/profile/delete/{{user._id}}" method="post">
+{{!-- <form action="/profile/delete/{{user._id}}" method="post">
 <button type="submit"><a href="/profile/delete/{{_id}}"></a>Delete Account</button>
 </form>
- 
+  --}}
 
 
  

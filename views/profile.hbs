@@ -4,9 +4,29 @@
       <a href="/"><img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24"></a>
     </a>
   </div>
-  <form action="/auth/logout" method="post">
-    <button class="logout-btn" type="submit"> Logout</button>
-</form>
+{{!--   <form action="/auth/logout" method="post">
+    <a href="/auth/logout">logout</a>
+</form> --}}
 </nav>
-<h1>My profile</h1>
-<a href="/profile-edit/{{userId}}">Edit profile</a>
+<h1 class="myprofile-title">My profile</h1>
+
+
+<section id="editor">
+    <div class="card" style="width: 160px;">
+      <div class="card-body">
+        <h5 class="card-title">Edit me.</h5>
+        <p class="card-text">if you want to change your credentials, click in the button above.</p>
+        <a href="/profile-edit/{{userId}}" class="btn btn-primary2" style="margin-left: 0px">Edit profile</a>
+      </div>
+    </div>
+    <div class="card" style="width: 160px;">
+      <div class="card-body text-left">
+        <h5 class="card-title">Delete me.</h5>
+        <p class="card-text">if you want to delete your profile, click in the button above.</p>
+        <br>
+        <form action="/profile/delete/{{userId}}" method="post">
+        <button class="btn btn-primary2" style="margin-left: 0px" type="submit">Delete profile</a>
+        </form>
+      </div>
+    </div>
+</section>
