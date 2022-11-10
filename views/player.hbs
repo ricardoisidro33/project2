@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img class ="nba-logo" src="/images/Logo-NBA.png" alt="NBA-logo" width="30" height="24">
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+  
+        <li class="nav-item">
+          <a class="nav-link" href="/profile/{{currentUser._id}}">Profile</a>
+        </li>
+        <form action="/auth/logout" method="post">
+        <a href="/auth/logout">Logout</a>
+</form>
+     
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container2">
+<h1 class="playername-page" >{{player.name}}</h1>
+<p class="player-info"> <b> Height:</b> {{player.height}} meters</p>
+<p class="player-info"> <b>Weight:</b> {{player.weight}} kilograms</p>
+<p class="player-info"><b>Jersey Number:</b> {{player.number}}</p>
+<p class="player-info"><b>Position:</b> {{player.position}}</p>
+<p class="player-info"><b>Most Popular Team:</b> {{player.team}}</p>
+
+<br>
+<br>
+<br>
+
+
+
+<iframe class="player-video" width="350" height="220" src="{{player.playerVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<form action="/review/player/{{player._id}}" method="post">
+<label for="reviews"></label>
+    <textarea class="reviews-textarea" name="content" id="reviews" cols="30" rows="10"></textarea>
+    <button class="review-btn" type="submit">Leave a review</button>
+</form>
+<br>
+{{#each player.reviews}}
+<div class = "reviews">
+
+    <p>{{content}} <span>By: {{author.username}}</span></p>
+
+    {{#ifEquals author._id ../userId}}
+
+    <form action="/delete-review/{{_id}}" method="post">
+<div> 
+        <button type="submit">Delete Review</button>
+    </form>
+
+    {{/ifEquals}}
+</div>
+{{/each}}
