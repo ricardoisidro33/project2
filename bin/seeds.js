@@ -81,7 +81,7 @@ const teams = [
         foundationyear: 1995,
         titles: 0,
         arena: "FedEx Forum",
-        imgUrl: "https://seeklogo.com/images/C/chicago-bulls-logo-8530A1093D-seeklogo.com.png"
+        imgUrl: "https://s.yimg.com/it/api/res/1.2/Mt3Hyyb_5Sy1S5OVcmNS0w--~A/YXBwaWQ9eW5ld3M7dz0xMjAwO2g9NjMwO3E9MTAw/https://s.yimg.com/cv/apiv2/default/nba/20181218/500x500/grizzlies_wbg.png"
       },
       {
         name: "Dallas Mavericks",
@@ -90,7 +90,7 @@ const teams = [
         foundationyear: 1980,
         titles: 1,
         arena: "American Airlines Center",
-        imgUrl: "https://seeklogo.com/images/C/chicago-bulls-logo-8530A1093D-seeklogo.com.png"
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Dallas_Mavericks_logo.svg/800px-Dallas_Mavericks_logo.svg.png"
       },
       {
         name: "Toronto Raptors",
@@ -99,7 +99,7 @@ const teams = [
         foundationyear: 1995,
         titles: 1,
         arena: "Air Canada Center",
-        imgUrl: "https://seeklogo.com/images/C/chicago-bulls-logo-8530A1093D-seeklogo.com.png"
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Toronto_Raptors_logo.svg/800px-Toronto_Raptors_logo.svg.png"
       },
       {
         name: "Detroit Pistons",
@@ -108,7 +108,7 @@ const teams = [
         foundationyear: 1941,
         titles: 3,
         arena: "Little Caesars Arena",
-        imgUrl: "https://seeklogo.com/images/C/chicago-bulls-logo-8530A1093D-seeklogo.com.png"
+        imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Pistons_logo17.svg/1200px-Pistons_logo17.svg.png"
       },
 ]
 

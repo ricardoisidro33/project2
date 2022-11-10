@@ -129,11 +129,12 @@ router.post("/profile-edit/:id", async (req,res,next) =>{
   try {
       const {id} = req.params
       const {email} = req.body
+      const {username} = req.body
       const userId =  req.session.currentUser._id
    const currentUser = req.session.currentUser
    const updatedUser = await User.findByIdAndUpdate(id,
     {
-      email
+      email, username
     })
     res.redirect(`/profile/${userId}`)
   } catch (error) {
